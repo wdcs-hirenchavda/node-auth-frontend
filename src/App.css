@@ -1,3 +1,44 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.inputBox{
+  display: block;
+  margin: 10px;
+  margin-left: 43%;
+  text-align: center;
+  padding: 7px;
+  width: 300px;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+.register,.product{
+  margin-left: 30%;
+  margin-top: 100px;
+}
+.appButton{
+
+  cursor: pointer;
+  margin: 20px;
+  padding: 9px;
+  width: 135px;
+  background-color: skyblue;
+  border: 1px solid;
+  border-radius: 15px;
+}
+.appButton:hover{
+  background-color: black;
+  color: white;
+}
+.nav-right{
+  text-align: right ;
+  padding-right: 100px;
+
+}
+.invalid-input{
+  color: red;
+  margin-top: -10px;
+  display: block;
+  margin-left: 20px;
+}
+
 .App {
   text-align: center;
 }
