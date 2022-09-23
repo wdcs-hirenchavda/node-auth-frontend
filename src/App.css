@@ -2,13 +2,25 @@
 .inputBox{
   display: block;
   margin: 10px;
-  margin-left: 43%;
+  margin-left: 40%;
   text-align: center;
   padding: 7px;
-  width: 300px;
+  width: 960px;
   border: 1px solid skyblue;
   border-radius: 10px;
 }
+.inputBox-sel{
+  display: block;
+  margin: 10px;
+  margin-left: 40%;
+  text-align: center;
+  padding: 7px;
+  width: 200px;
+  border: 1px solid skyblue;
+  border-radius: 10px;
+}
+
+
 .register,.product{
   margin-left: 30%;
   margin-top: 100px;
@@ -46,6 +58,14 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.login{
+  margin-top: 7%;
+  margin-left: 20%;
+}
+.product{
+  margin-top: 7%;
+  margin-left: -15%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

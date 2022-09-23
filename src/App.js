@@ -4,34 +4,33 @@ import './App.css';
 import Home from './components/Home';
 import Login from './components/Login';
 import About from './components/About';
-import PrivateRoutes from './components/PrivateRoutes';
+import Navbar1 from './components/Navbar1';
+import Sidebar1 from './components/Sidebar1';
+import Products from './components/Products';
+import AddProduct from './components/AddProduct';
+import User from './components/User';
+// import PrivateRoutes from './components/PrivateRoutes';
 
 function App() {
-  const loginToken = localStorage.getItem('login_token')
+  // const loginToken = localStorage.getItem('login_token')
 
   return (
     <div className="App">
 
-      
       <BrowserRouter>
+      <Navbar1/>
         <Routes>
-          {loginToken ? 
           <Route  path="/about" element={<About/>} />
-          :
-          <Route>
 
           <Route  path="/signup" element={<SignupNew/>} />
           <Route  path="/login" element={<Login/>} />
           <Route  path="/" element={<Home/>} />
-          </Route>
+          <Route  path="/product" element={<Products/>} />
+          <Route  path="/add-product" element={<AddProduct/>} />
+          <Route  path="/user" element={<User/>} />
 
-          }
-          
-          
-          {/* <Route  path="/about" element={<About/>} /> */}
-        </Routes>
+          </Routes>
       </BrowserRouter>
-      
     </div>
   );
 }
