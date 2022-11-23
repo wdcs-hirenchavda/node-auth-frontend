@@ -28,20 +28,13 @@ function Sidebar1() {
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <NavLink  to="/about" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="columns">About</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink  to="/product" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="table">Products</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink  to="/user" activeClassName="activeClicked" onClick={()=>{navigate('/user')}} >
-              <CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink  to="/category" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="chart-line">Category</CDBSidebarMenuItem>
-            </NavLink>
+            {/* <div className="cat" >
+           <input className="cat" type='checkbox' />Shoes
+           <input type='checkbox' className="cat" />Laptop
+           <input type='checkbox' className="cat" />Mobile
+            </div> */}
           </CDBSidebarMenu>
-        </CDBSidebarContent>
+        </CDBSidebarContent> 
 
         {/* <CDBSidebarFooter style={{ textAlign: "center" }}>
           <div

@@ -11,6 +11,10 @@ function AddProduct() {
     const [category, setCategory]= useState();
     const [company, setCompany]= useState('');
     const [error, setError]= useState(false);
+    const user = localStorage.getItem('user');
+    
+    // console.log(JSON.parse(user)._id);
+    
 
     const addProduct = async()=>{
         if(!name || !price || !company || !category){
@@ -22,6 +26,7 @@ function AddProduct() {
                     name:name,
                     price:parseInt(price),
                     category:category,
+                    userId: JSON.parse(user)._id,
                     company:company
                 
             })
@@ -35,9 +40,9 @@ function AddProduct() {
                   });
                   navigate('/product')
             }
-        }
+        } 
         
-    }
+    } 
   return (
     <div>
        <div className='product ' >

@@ -6,7 +6,7 @@ function Home() {
     
   return (
     <>
-    <div className='container my-3' >
+    <div className='login-sign' >
       <h1>Welcome! Mr.Developer</h1>
       <button className='btn btn-primary my-3 mx-2' onClick={()=>{navigate('/signup')}}>Signup</button>
       <button className='btn btn-primary my-3 mx-2' onClick={()=>{navigate('/login')}} > Login</button>
